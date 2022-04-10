@@ -1,6 +1,8 @@
 ﻿#include <iostream>
+#include "Header.h"
 using namespace std;
+
 int main()
 {
-    std::cout << "Hello World!\n";
+    vectorStudent S("students.txt");
 }
