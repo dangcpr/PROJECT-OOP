@@ -2,5 +2,33 @@
 1. Nguyen Hai Dang - ID: 20120049
 2. Le Nguyen Khang - ID: 20120113
 # Teacher
-Mr. Tran Duy Quang - Class: 20_3
+- Mr. Tran Duy Quang - Class: 20_3
 # Project 1: Mock Student Data Generator
+1. Read all students saved in the file "students.txt" back into a vector of Student. You can hard-code this file as follow.
+   1. The file structure is similar to that of Mr. Quang.
+2. Generate randomly a number n in the range of [5, 10]
+   1. Is a integer.
+3. Generate randomly n Students and add to the previous vector.
+   1. Student ID (8 numbers)
+   2. Full-name:
+      1. First-name (Vietnamese: Tên)
+      2. Midde-name (Vietnamese: Họ-tên lót)
+      3. Last-name (Vietnamese: Họ)
+   3. GPA: double or float (Round 2 digits after the ".").
+   4. Telephone: Fake VN tels (Mobi, Vina, Viettel, Vietnammobile, ...)
+   5. Email:
+      1. Ex: Name is Le Van Son.
+      2. Email: lvson@... (1st character of Last-name and Middle-name and all First-name).
+      3. Prepare 10 biggest company domains like  gmail.com, microsoft.com, apple.com, amazon.com....
+   6. Birthday: Random from 01/01/1906 to now.
+   7. Address:
+      1. Apartment number.
+      2. Street names.
+      3. Ward.
+      4. District.
+      5. City (HCM City).
+4.  Overwrite and save and the students in the current vector back to the file "students.txt".
+5.  Print out the average GPA of all students.
+6.  Print out all the students that have a GPA greater than the average GPA.
+7.  Functions 4, 5 and 6: I'm thinking about making a menu (use Regex).
+8.  Don't forget Constructor and Destructor.
