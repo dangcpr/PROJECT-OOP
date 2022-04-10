@@ -24,7 +24,7 @@
       1. Ex: Name is Le Van Son.
       2. Email: lvson@... (1st character of Last-name and Middle-name and all First-name).
       3. Prepare 10 biggest company domains like  gmail.com, microsoft.com, apple.com, amazon.com....
-   6. Birthday: Random from 01/01/1906 to now.
+   6. Birthday: Random from 01/01/1906 to 31/12/2003.
    7. Address:
       1. Apartment number.
       2. Street names.
