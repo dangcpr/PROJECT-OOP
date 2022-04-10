@@ -9,11 +9,15 @@
 2. Generate randomly a number n in the range of [5, 10]
    1. Is a integer.
 3. Generate randomly n Students and add to the previous vector.
-   1. Student ID (8 numbers)
+   1. Student ID (8 numbers): abcdefgh
+      1. ab = 18->21: random only 1 time.
+      2. cd = 11->28: random only 1 time.
+      3. e = 0,5,6,7: random only 1 time.
+      4. fgh = A ingeter has 3 numbers (start at 001, each student increases by 1 unit).
    2. Full-name:
-      1. First-name (Vietnamese: Tên)
-      2. Midde-name (Vietnamese: Họ-tên lót)
-      3. Last-name (Vietnamese: Họ)
+      1. First-name (Vietnamese: Tên).
+      2. Midde-name (Vietnamese: Họ-tên lót).
+      3. Last-name (Vietnamese: Họ).
    3. GPA: double or float (Round 2 digits after the ".").
    4. Telephone: Fake VN tels (Mobi, Vina, Viettel, Vietnammobile, ...)
    5. Email:
