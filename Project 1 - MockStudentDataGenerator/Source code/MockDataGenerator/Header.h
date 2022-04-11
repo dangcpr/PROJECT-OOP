@@ -2,12 +2,12 @@
 #include <iostream>
 #include <vector>
 #include <fstream>
+#include <ctime>
 using namespace std;
 
 class Number {
 public:
-	Number();
-	int RandomInteger(int);
+	unsigned long RandomInteger(long, long);
 	double RandomDouble(double);
 	int StepInteger(int, int);
 };
@@ -64,4 +64,32 @@ private:
 public:
 	vectorStudent(string);
 	vector<Student> getVS() { return _VS; }
+};
+
+class FakeEmail {
+private:
+	vector<string> _domain;
+	Number _rng;
+public:
+	FakeEmail();
+	string next(string);
+};
+
+class FakeBirthday {
+private:
+	time_t _start;
+	time_t _end;
+	Number _rng;
+public:
+	FakeBirthday();
+	void next(int&, int&, int&);
+};
+
+class FakeAddress {
+private:
+	vector<string> _Street;
+	vector<string> _Ward;
+	vector<string> _District;
+public:
+	FakeAddress();
 };

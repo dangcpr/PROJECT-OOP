@@ -1,7 +1,21 @@
 #include <string>
 #include <string.h>
+#include <sstream>
+#include <cctype>
+#include <algorithm>
 #include "Header.h"
+#pragma warning(disable : 4996)
+
 using namespace std;
+
+unsigned long Number::RandomInteger(long left, long right) {
+	unsigned long x = rand() & 0xff;
+	x |= (rand() & 0xff) << 8;
+	x |= (rand() & 0xff) << 16;
+	x |= (rand() & 0xff) << 24;
+	unsigned long a = x % (right - left + 1) + left;
+	return a;
+}
 readStudent::readStudent(fstream& f, int& pos) {
 	f.seekg(pos, ios::beg);
 	string s1, s2; char c[256]; double d; int i;
@@ -58,4 +72,56 @@ vectorStudent::vectorStudent(string file) {
 		readStudent tmp(f, pos);
 		_VS.push_back(tmp.getS());
 	}
+	f.close();
+}
+FakeEmail::FakeEmail() {
+	_domain =
+	{ "gmail.com","yahoo.com","hotmail.com","outlook.com","yandex.com","zoho.com","inbox.com","icloud.com","apple.com","vtv.vn" };
+}
+string FakeEmail::next(string name) {
+	stringstream em;
+	string tmp;
+	transform(name.begin(), name.end(), name.begin(), ::tolower);
+	int k = _rng.RandomInteger(0, _domain.size() - 1);
+	while (name.find(' ') != -1) {
+		int f = name.find(' ');
+		tmp = name.substr(0, f);
+		em << tmp[0];
+		name.erase(name.begin(), name.begin() + f + 1);
+	}
+	em << name << "@" << _domain[k];
+	string email = em.str();
+	return email;
+}
+
+FakeBirthday::FakeBirthday() {
+	int s_day = 1, s_month = 1, s_year = 1970;
+	int e_day = 31, e_month = 12, e_year = 2003;
+
+	struct tm* tm;
+	time(&_start);
+	tm = localtime(&_start);
+	tm->tm_year = s_year - 1900;
+	tm->tm_mon = s_month - 1;
+	tm->tm_mday = s_day;
+	_start = mktime(tm);
+
+	time(&_end);
+	tm = localtime(&_end);
+	tm->tm_year = e_year - 1900;
+	tm->tm_mon = e_month - 1;
+	tm->tm_mday = e_day;
+	_end = mktime(tm);
+}
+
+void FakeBirthday::next(int& day, int& month, int& year) {
+	unsigned long k = _rng.RandomInteger((long)_start, (long)_end);
+	time_t tk = (time_t)k;
+
+	struct tm* tm;
+
+	tm = localtime(&tk);
+	day = tm->tm_mday;
+	month = tm->tm_mon + 1;
+	year = tm->tm_year + 1900;
 }
