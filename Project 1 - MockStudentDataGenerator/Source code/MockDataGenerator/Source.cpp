@@ -3,6 +3,7 @@
 #include <sstream>
 #include <cctype>
 #include <algorithm>
+#include <regex>
 #include "Header.h"
 #pragma warning(disable : 4996)
 
@@ -124,4 +125,49 @@ void FakeBirthday::next(int& day, int& month, int& year) {
 	day = tm->tm_mday;
 	month = tm->tm_mon + 1;
 	year = tm->tm_year + 1900;
+}
+
+FakeAddress::FakeAddress() {
+	fstream f;
+	f.open("Address.csv", ios::in);
+	char c[256]; string s; int n = 0;
+	vector<string> temp;
+	f.getline(c, 256, '\n');
+	while (!f.eof()) {
+		f.getline(c, 256, ',');
+		temp.push_back(string(c));
+		f.getline(c, 256, ',');
+		temp.push_back(string(c));
+		f.getline(c, 256, '\n');
+		temp.push_back(string(c));
+		_Data.push_back(temp);
+		temp.resize(0);
+	}
+	f.close();
+}
+string FakeAddress::next() {
+	int index = _rng.RandomInteger(0, _Data.size() - 1);
+	int _numHouse = _rng.RandomInteger(0, 300);
+	
+	stringstream ss;
+	ss << _numHouse << " " << _Data[index][0];
+
+	regex k("\\d+");
+	if (regex_match(_Data[index][1], k)) {
+		ss << ", " << "Ward " << _Data[index][1];
+	}
+	else {
+		ss << ", " << _Data[index][1] << " Ward";
+	}
+
+	if (regex_match(_Data[index][2], k)) {
+		ss << ", " << "District " << _Data[index][2];
+	}
+	else {
+		ss << ", " << _Data[index][2] << " District";
+	}
+
+	ss << ", Ho Chi Minh City";
+	string s = ss.str();
+	return s;
 }

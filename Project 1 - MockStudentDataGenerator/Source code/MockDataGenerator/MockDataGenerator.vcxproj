@@ -145,6 +145,15 @@
   <ItemGroup>
     <ClInclude Include="Header.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="students.txt" />
+    <Text Include="Ho.txt" />
+    <Text Include="Ten.txt" />
+    <Text Include="Tenlot.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Address.csv" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -18,4 +18,7 @@ int main()
     k.next(day, month, year);
     cout.fill('0');
     cout << endl << setw(2) << day << setw(2) << month << setw(4) << year;
+
+    FakeAddress a;
+    cout << endl << a.next();
 }

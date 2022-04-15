@@ -87,9 +87,9 @@ public:
 
 class FakeAddress {
 private:
-	vector<string> _Street;
-	vector<string> _Ward;
-	vector<string> _District;
+	vector<vector<string>> _Data;
+	Number _rng;
 public:
 	FakeAddress();
+	string next();
 };

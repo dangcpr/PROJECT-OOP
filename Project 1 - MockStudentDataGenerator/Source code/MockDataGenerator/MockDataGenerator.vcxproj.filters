@@ -27,4 +27,23 @@
       <Filter>Source Files</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="students.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+    <Text Include="Ho.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+    <Text Include="Tenlot.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+    <Text Include="Ten.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Address.csv">
+      <Filter>Source Files</Filter>
+    </None>
+  </ItemGroup>
 </Project>
