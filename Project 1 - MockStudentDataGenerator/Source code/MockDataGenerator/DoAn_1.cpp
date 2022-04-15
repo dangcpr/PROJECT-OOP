@@ -6,13 +6,96 @@
 #include <fstream>
 
 using namespace std;
-
-class Student {
+class Rand_id;//3 i
+class Rand_name;//3 ii
+class Rand_SDT;//3 iv
+class Rand_interger;// 2
+class Rand_GPA;//3 iii
+class Rand_GPA {
 public:
-	vector<string> sinh_id();
-	vector<string> sinh_name(int );
+	vector<string> rand_gpa(int );
 };
-vector<string> Student::sinh_id() {
+class Rand_interger {
+public:
+	int rand();
+};
+int Rand_interger::rand() {
+	int r = 10;
+	int l = 5;
+	int n = rand() % (r - l + 1) + 1;
+	return n;
+}
+class Rand_id {
+public:
+	vector<string> rand_id();
+};	
+
+class Rand_name {
+public:
+	vector<string> rand_name(int);
+};
+class Rand_SDT {
+public :
+	vector<string> rand_sdt(int);
+};
+vector<string> Rand_GPA::rand_gpa(int n) {
+	vector<string> g;
+	stringstream buil[1001];
+	for (int i = 1;i <= n;i++) {
+		int l = 0;
+		int r = 10;
+		int a = rand() % (r - l + 1) + l;
+		if (a == 10)
+			buil[i] << a << '.' << "00";
+		else {
+			r = 9;
+			int b = rand() % (r - l + 1) + l;
+			int c = rand() % (r - l + 1) + l;
+			buil[i] << a << '.' << b << c;
+		}
+	}
+	for (int i = 1;i <= n;i++) {
+		g.push_back(buil[i].str());
+	}
+	return g;
+}
+vector<string> Rand_SDT::rand_sdt(int n) {
+	vector<string> g;
+	stringstream buil[1001];
+	string mb[10] = { "090", "093", "089", "070", "079", "077", "076", "078" };
+	string vt[15] = { "086", "096", "097", "098", "032", "033", "034", "035", "036", "037", "038", "039" };
+	string vn[10] = { "088", "091", "094", "081", "082", "083", "084", "085" };
+	string vnmb[5] = { "092", "056", "058" };
+	for (int i = 1;i <= n;i++) {
+		int a = rand() % (4 - 1 + 1) + 1;
+		int b = 0;
+		if (a == 1) {
+			b = rand() % (8 - 1 + 1) + 1;
+			buil[i] << mb[b - 1];
+		}
+		else if (a == 2) {
+			b = rand() % (12 - 1 + 1) + 1;
+			buil[i] << vt[b - 1];
+		}
+		else if (a == 3) {
+			b = rand() % (8 - 1 + 1) + 1;
+			buil[i] << vn[b - 1];
+		}
+		else if (a == 4) {
+			b = rand() % (3 - 1 + 1) + 1;
+			buil[i] << vnmb[b - 1];
+		}
+		for (int j = 1;j <= 7;j++) {
+			int c = rand() % (9 - 0 + 1) + 0;
+			buil[i] << c;
+		}
+	}
+	for (int i = 1;i <= n;i++) {
+		g.push_back(buil[i].str());
+	}
+	return g;
+}
+vector<string> Rand_id::rand_id() {
 	vector<string> g;
 	stringstream buil[1001];
 	int fgh = rand() % (99 - 1 + 1) + 1;//=-------999
@@ -30,13 +113,15 @@ vector<string> Student::sinh_id() {
 			buil[i] << i;	
 	}
 	for (int i = 1;i <= fgh;i++) {
-		 g.push_back(buil[i].str()) ;
+		 g.push_back(buil[i].str());
 	}
 	return g;
 }
-vector<string> Student::sinh_name(int n) {
+
+vector<string> Rand_name::rand_name(int n) {
 	stringstream buil[1000];
 	string s[18] = {"Nguyen", "Le", "Bui", "Pham", "Vu", "Vo", "Hoang", "Huynh", "Do", "Phan", "Dang", "Tran", "Ho", "Ngo", "Duong", "Ly"};
+	//s[] : ho pho bien 
 	for (int i = 1;i <= n;i++) {
 		int a = rand() % (90 - 0 + 1) + 0;
 		float b = rand() % (9 - 0 + 1) + 0;
@@ -142,11 +227,20 @@ vector<string> Student::sinh_name(int n) {
 }
 int main() {
 	srand((unsigned)time(0));
-	Student a;
-	vector<string> g = a.sinh_id();
-	vector<string> g2 = a.sinh_name(g.size());
+	Rand_id a;
+	vector<string> g = a.rand_id();
+
+	Rand_name b;
+	vector<string> g2 = b.rand_name(g.size());
+
+	Rand_SDT c;
+	vector<string> g3 = c.rand_sdt(g.size());
+
+	Rand_GPA d;
+	vector<string> g4 = d.rand_gpa(g.size());
+
 	for (int i = 0;i < g.size();i++) {
-		cout << g[i] << ' ' << g2[i] << endl;
+		cout << g[i] << ' ' << g2[i] << ' ' << g3[i] << ' ' << g4[i] << endl;
 	}
 
 }
