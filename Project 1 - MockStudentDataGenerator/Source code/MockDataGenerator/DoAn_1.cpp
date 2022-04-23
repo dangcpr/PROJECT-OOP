@@ -197,24 +197,26 @@ class Rand_GPA {
 private:
 	RandomIntegerGenerator _rng;
 public:
-	string rand_gpa( );
+	double rand_gpa( );
 };
 
-string Rand_GPA::rand_gpa() {
+double Rand_GPA::rand_gpa() {
 	stringstream buil;
 	int l = 0;
 	int r = 10;
 	int a = rand() % (r - l + 1) + l;
 	if (a == 10)
-		buil << a << '.' << "00";
+		//buil << a << '.' << "00";
+		return (double)a;
 	else {
 		r = 9;
 		int b = _rng.next(l,r);
 		int c = _rng.next(l,r);
-		buil << a << '.' << b << c;
+		double gpa = a + (double)b / 10 + (double)c / 100;
+		//buil << a << '.' << b << c;
+		return gpa;
 	}
-	
-	return buil.str();
+
 }
 class Rand_interger {
 public:
