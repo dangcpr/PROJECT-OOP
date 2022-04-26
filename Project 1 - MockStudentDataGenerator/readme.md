@@ -31,11 +31,11 @@
       3. * [X] Ward.
       4. * [X] District.
       5. * [X] City (HCM City).
-4.  * [ ] Overwrite and save and the students in the current vector back to the file "students.txt".
+4.  * [X] Overwrite and save and the students in the current vector back to the file "students.txt".
 5.  * [ ] Print out the average GPA of all students.
 6.  * [ ] Print out all the students that have a GPA greater than the average GPA.
-7.  * [ ] Functions 4, 5 and 6: I'm thinking about making a menu (use Regex).
-8.  * [ ] Don't forget Constructor and Destructor.
+7.  * [X] Don't forget Constructor and Destructor.
+8.  * [ ] Menu (if I want).
 -----
 # Notice
 - [x] Completed.

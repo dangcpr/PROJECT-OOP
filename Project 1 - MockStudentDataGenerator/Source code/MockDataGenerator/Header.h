@@ -3,51 +3,119 @@
 #include <vector>
 #include <fstream>
 #include <ctime>
+#include <sstream>
 using namespace std;
 
 class Number {
 public:
-	unsigned long RandomInteger(long, long);
-	double RandomDouble(double);
-	int StepInteger(int, int);
+	unsigned long RandomInteger(long, long);;
+};
+class RandomIntegerGenerator {
+public:
+	int next();
+	int next(int);
+	int next(int, int);
+};
+class Fullname {
+private:
+	string _firstname;
+	string _middlename;
+	string _lastname;
+public:
+	Fullname() {
+		_firstname = "";
+		_middlename = "";
+		_lastname = "";
+	}
+	Fullname(string first, string middle, string last) {
+		_firstname = first;
+		_middlename = middle;
+		_lastname = last;
+	}
+
+	string toString() {
+		stringstream builder;
+
+		builder << _lastname << " "
+			<< _middlename << " "
+			<< _firstname;
+
+		string result = builder.str();
+		return result;
+	}
+	string lname() { return _lastname; }
+	string mname() { return _middlename; }
+	string fname() { return _firstname; }
+	void setLname(string Lname) { _lastname = Lname; }
+	void setMname(string Mname) { _middlename = Mname; }
+	void setFname(string Fname) { _firstname = Fname; }
+};
+class date {
+protected:
+	int _day;
+	int _month;
+	int _year;
+public:
+	date() {
+		_day = 1;
+		_month = 1;
+		_year = 1970;
+	}
+	date(int day, int month, int year) {	
+		_day = day;
+		_month = month;
+		_year = year;
+	}
+	int day() { return _day; }
+	int month() { return _month; }
+	int year() { return _year; }
+	void setDay(int day) { _day = day; }
+	void setMonth(int month) { _month = month; }
+	void setYear(int year) { _year = year; }
+	string toString();
 };
 
 class Student {
 private:
 	string _id;
-	string _lastname;
-	string _midname;
-	string _firstname;
+	Fullname _name;
 	double _GPA;
 	string _tel;
 	string _email;
-	int _birDay;
-	int _birMonth;
-	int _birYear;
+	date _DOB;
 	string _address;
 public:
+	Student() {
+		_id = "";
+		_GPA = 0;
+		_tel = "";
+		_email = "";
+		_address = "";
+	}
+	Student(string id, Fullname name, double GPA, string tel, string email, date DOB, string address) {
+		_id = id;
+		_name = name;
+		_GPA = GPA;
+		_tel = tel;
+		_email = email;
+		_DOB = DOB;
+		_address = address;
+	}
 	string id() { return _id; }
-	string lname() { return _lastname; }
-	string mname() { return _midname; }
-	string fname() { return _firstname; }
+	Fullname name() { return _name; }
 	double GPA() { return _GPA; }
 	string tel() { return _tel; }
 	string email() { return _email; }
-	int birDay() { return _birDay; }
-	int birMonth() { return _birMonth; }
-	int birYear() { return _birYear; }
+	date DOB() { return _DOB; }
 	string address() { return _address; }
 	void setid(string id) { _id = id; }
-	void setLname(string Lname) { _lastname = Lname; }
-	void setMname(string Mname) { _midname = Mname; }
-	void setFname(string Fname) { _firstname = Fname; }
+	void setName(Fullname name) { _name = name; }
 	void setGPA(double GPA) { _GPA = GPA; }
 	void setTel(string tel) { _tel = tel; }
 	void setEmail(string Email) { _email = Email; }
-	void setBirDay(int day) { _birDay = day; }
-	void setBirMonth(int month) { _birMonth = month; }
-	void setBirYear(int year) { _birYear = year; }
+	void setDOB(date DOB) { _DOB = DOB; }
 	void setAddress(string add) { _address = add; }
+	~Student() {};
 };
 
 class readStudent {
@@ -56,14 +124,41 @@ private:
 public:
 	readStudent(fstream&, int&);
 	Student getS() { return _S; }
+	~readStudent() { };
 };
 
-class vectorStudent {
+
+
+class FakeFullnameGenerator {
 private:
-	vector<Student> _VS;
+	vector<string> _CommonlastNames;
+	vector<string> _firstNames;
+	vector<string> _middleNames;
+	vector<string> _lastNames;
+	RandomIntegerGenerator _rng;
+
 public:
-	vectorStudent(string);
-	vector<Student> getVS() { return _VS; }
+	FakeFullnameGenerator();
+	Fullname next();
+};
+
+class FakeGPA {
+private:
+	RandomIntegerGenerator _rng;
+public:
+	double rand_gpa();
+};
+
+class FakeInterger {
+public:
+	int rand();
+};
+
+class FakeId {
+private:
+	RandomIntegerGenerator _rng;
+public:
+	string rand_id(int, int);
 };
 
 class FakeEmail {
@@ -75,6 +170,19 @@ public:
 	string next(string);
 };
 
+class FakeTel {
+private:
+	vector<string> mb;
+	vector<string> vt;
+	vector<string> vn;
+	vector<string> vnmb;
+	RandomIntegerGenerator _rng;
+
+public:
+	FakeTel();
+	string rand_tel();
+};
+
 class FakeBirthday {
 private:
 	time_t _start;
@@ -82,7 +190,7 @@ private:
 	Number _rng;
 public:
 	FakeBirthday();
-	void next(int&, int&, int&);
+	date next();
 };
 
 class FakeAddress {
@@ -92,4 +200,25 @@ private:
 public:
 	FakeAddress();
 	string next();
+};
+class RandomStudent {
+private:
+	Student _S;
+	RandomIntegerGenerator _rng;
+public:
+	RandomStudent(int);
+	Student info() { return _S; }
+	~RandomStudent() {}
+};
+class vectorStudent {
+private:
+	vector<Student> _VS;
+	RandomIntegerGenerator _rng;
+public:
+	vectorStudent(string);
+	void RandomListStudent();
+	void infoList();
+	void saveList(string);
+	vector<Student> getVS() { return _VS; }
+	~vectorStudent() { };
 };

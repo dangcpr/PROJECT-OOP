@@ -86,7 +86,7 @@ public:
 	Fullname next();
 };
 RandomFullnameGenerator::RandomFullnameGenerator() {
-	_CommonfirstNames = {"Nguyen", "Le", "Bui", "Pham", "Vu", "Vo", "Hoang", "Huynh", "Do", "Phan", "Dang", "Tran", "Ho", "Ngo", "Duong", "Ly"};//Ho
+	_CommonfirstNames = { "Nguyen", "Le", "Bui", "Pham", "Vu", "Vo", "Hoang", "Huynh", "Do", "Phan", "Dang", "Tran", "Ho", "Ngo", "Duong", "Ly" };//Ho
 
 	fstream of;
 	string Ho_phu;
@@ -148,7 +148,7 @@ Fullname RandomFullnameGenerator::next() {
 			first = _firstNames[5];
 	}
 	else if (ab <= 73.1) {
-		int c = _rng.next(1,2);
+		int c = _rng.next(1, 2);
 		if (c == 1)
 			first = _firstNames[6];
 		else
@@ -197,7 +197,7 @@ class Rand_GPA {
 private:
 	RandomIntegerGenerator _rng;
 public:
-	double rand_gpa( );
+	double rand_gpa();
 };
 
 double Rand_GPA::rand_gpa() {
@@ -210,8 +210,8 @@ double Rand_GPA::rand_gpa() {
 		return (double)a;
 	else {
 		r = 9;
-		int b = _rng.next(l,r);
-		int c = _rng.next(l,r);
+		int b = _rng.next(l, r);
+		int c = _rng.next(l, r);
 		double gpa = a + (double)b / 10 + (double)c / 100;
 		//buil << a << '.' << b << c;
 		return gpa;
@@ -233,7 +233,7 @@ private:
 	RandomIntegerGenerator _rng;
 public:
 	string rand_id();
-};	
+};
 string Rand_id::rand_id() {
 	stringstream buil;
 	int ab = _rng.next(18, 21);
@@ -241,7 +241,7 @@ string Rand_id::rand_id() {
 	int c[5] = { 0,5,6,7 };
 	int cc = _rng.next(1, 4);;
 	buil << ab << cd << c[cc];
-	
+
 	return buil.str();
 }
 class Rand_SDT {
@@ -252,7 +252,7 @@ private:
 	vector<string> vnmb;
 	RandomIntegerGenerator _rng;
 
-public :
+public:
 	Rand_SDT();
 	string rand_sdt();
 };
@@ -265,11 +265,11 @@ Rand_SDT::Rand_SDT() {
 
 string Rand_SDT::rand_sdt() {
 	stringstream buil;
-	
+
 	int a = _rng.next(1, 4);
 	int b = 0;
 	if (a == 1) {
-		b = _rng.next(1,8);
+		b = _rng.next(1, 8);
 		buil << mb[b - 1];
 	}
 	else if (a == 2) {
@@ -284,11 +284,11 @@ string Rand_SDT::rand_sdt() {
 		b = _rng.next(1, 3);
 		buil << vnmb[b - 1];
 	}
-	for (int j = 1;j <= 7;j++) {
+	for (int j = 1; j <= 7; j++) {
 		int c = _rng.next(0, 9);;
 		buil << c;
 	}
-	
+
 	return buil.str();
 }
 
@@ -307,10 +307,10 @@ int main() {
 	for (int i = 0; i < 10; i++) {
 		Fullname person = rng.next();
 		a.push_back(person);
-	
+
 		string ID = c.rand_id();
 		if (i <= 9)
-			buil[i] << ID <<  "00" << i;
+			buil[i] << ID << "00" << i;
 		else if (i <= 99)
 			buil[i] << ID << "0" << i;
 		else
@@ -320,6 +320,6 @@ int main() {
 
 
 	for (int i = 0; i < a.size(); i++) {
-		cout << v_id[i] <<' ' <<  a[i].toString() << ' ' << b.rand_gpa() << ' ' << d.rand_sdt() << endl;
+		cout << v_id[i] << ' ' << a[i].toString() << ' ' << b.rand_gpa() << ' ' << d.rand_sdt() << endl;
 	}
 }
