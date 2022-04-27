@@ -1,0 +1,11 @@
+Sau đây, em xin demo đồ án số 1: Mock Student Data Generator.
+Nếu bây giờ nhập lệnh không lệ:
+- 1: Nhập chuỗi rỗng: Màn hình thông báo chuỗi rỗng, phải nhập lại.
+- 2: Nhập chuỗi không hợp lệ: chuỗi hợp lệ là 1 con số nguyên từ 0 đến 2, nếu nằm ngoài khoảng nằm hoặc nhập số nguyên không hợp thì chương trình báo lỗi.
+bây giờ nhập lệnh hợp lệ, đầu tiên là em demo lệnh số 1: Random sinh viên, file students.txt ban đầu như sau, bây giờ em Random, màn hình thông báo random 9 sinh viên, bây giờ kiểm tra lại file
+
+Bây giờ em demo lệnh số 2, tính điểm trung bình và in danh sách điểm cao hơn. Màn hình đã in ra danh sách.
+
+Để thoát chương trình, nhập số 0
+
+Video demo đến đây kết thúc, cảm ơn thầy đã xem!

@@ -1,0 +1,140 @@
+Student: 2127831 - Tran Huu Minh
+    GPA=7.30, Telephone=0909-888-773
+    Email=thminh@student.hcmus.edu.vn
+    DOB=17/12/2003
+    Address=8 Nguyen Dinh Chieu, Ward 5, District 3, Ho Chi Minh city
+Student: 2127832 - Nguyen Dieu Linh
+    GPA=9.22, Telephone=0912-351-718
+    Email=thminh@student.hcmus.edu.vn
+    DOB=23/09/2003
+    Address=22 Ngo Thoi Nhiem, Ward 2, District 1, Ho Chi Minh city 
+Student: 2127833 - Ngo Thoi Chanh
+    GPA=8.12, Telephone=0977-161-237
+    Email=ntchanh@student.hcmus.edu.vn
+    DOB=12/06/2003
+    Address=8 Binh Long, Binh Hung Hoa Ward, Bin Tan District, Ho Chi Minh city
+Student: 21177601 - Bui Diem Thuong
+    GPA=9.12, Telephone=039-010-8549
+    Email=bdthuong@apple.com
+    DOB=03/07/1988
+    Address=129 Phan Van Tri, Ward 7, District 5, Ho Chi Minh City
+Student: 21185602 - Nguyen Cong Khuyen
+    GPA=5.87, Telephone=056-115-1939
+    Email=nckhuyen@inbox.com
+    DOB=09/04/1992
+    Address=164 Dao Tri, Phu Thuan Ward, District 7, Ho Chi Minh City
+Student: 21205603 - Phan Khanh Cuong
+    GPA=5.05, Telephone=056-620-4466
+    Email=pkcuong@zoho.com
+    DOB=30/05/2003
+    Address=24 De Tham, Co Giang Ward, District 1, Ho Chi Minh City
+Student: 20285604 - Nguyen Cat Khang
+    GPA=4.57, Telephone=036-387-3053
+    Email=nckhang@zoho.com
+    DOB=13/02/1975
+    Address=216 Nguyen Xi, Ward 26, Binh Thanh District, Ho Chi Minh City
+Student: 21156605 - Nguyen Thanh Luong
+    GPA=4.16, Telephone=033-282-4797
+    Email=ntluong@icloud.com
+    DOB=18/02/1994
+    Address=78 Bui Thi Xuan, Pham Ngu Lao Ward, District 1, Ho Chi Minh City
+Student: 19256606 - Nguyen Hieu Lo
+    GPA=3.30, Telephone=093-697-0636
+    Email=nhlo@apple.com
+    DOB=23/11/1981
+    Address=153 Go O Moi, Phu Thuan Ward, District 7, Ho Chi Minh City
+Student: 21225607 - Nguyen Diem Noi
+    GPA=10.00, Telephone=092-379-8594
+    Email=ndnoi@yandex.com
+    DOB=15/12/1996
+    Address=20 Street Number 3, Ward 27, Binh Thanh District, Ho Chi Minh City
+Student: 19210608 - Kha Thien Ta
+    GPA=0.65, Telephone=070-284-1145
+    Email=ktta@icloud.com
+    DOB=08/11/1980
+    Address=94 Phan Van Tri, Ward 2, District 5, Ho Chi Minh City
+Student: 19197609 - Le Ha Loi
+    GPA=7.30, Telephone=091-856-8595
+    Email=lhloi@inbox.com
+    DOB=25/12/1977
+    Address=274 Van Cao, Phu Tho Hoa Ward, Tan Phu District, Ho Chi Minh City
+Student: 19210419 - Phan Nhu Tung
+    GPA=10.00, Telephone=077-644-8242
+    Email=pntung@yahoo.com
+    DOB=01/07/1994
+    Address=67 Dang Dung, Tan Dinh Ward, District 1, Ho Chi Minh City
+Student: 21126420 - Do Hong Duc
+    GPA=3.16, Telephone=056-373-4190
+    Email=dhduc@vtv.vn
+    DOB=03/10/2002
+    Address=137 An Duong Vuong, Ward 8, District 5, Ho Chi Minh City
+Student: 20226421 - Pham Hoai Vinh
+    GPA=4.12, Telephone=078-773-7579
+    Email=phvinh@outlook.com
+    DOB=11/09/1994
+    Address=143 Street Number 3, Ward 27, Binh Thanh District, Ho Chi Minh City
+Student: 19210422 - Nguyen Bao Ngac
+    GPA=8.45, Telephone=089-404-4991
+    Email=nbngac@vtv.vn
+    DOB=19/12/1993
+    Address=222 Tran Phu, Ward 8, District 5, Ho Chi Minh City
+Student: 18215423 - Hoang Hung Ngu
+    GPA=8.68, Telephone=096-085-8834
+    Email=hhngu@apple.com
+    DOB=04/02/1983
+    Address=165 Chu Van An, Ward 26, Binh Thanh District, Ho Chi Minh City
+Student: 18275424 - Nguyen Manh Lap
+    GPA=2.00, Telephone=089-781-6567
+    Email=nmlap@vtv.vn
+    DOB=18/10/1982
+    Address=237 Do Thi Tam, Tan Quy Ward, Tan Phu District, Ho Chi Minh City
+Student: 20226425 - Loan Khanh Bang
+    GPA=4.69, Telephone=037-027-7329
+    Email=lkbang@icloud.com
+    DOB=17/03/1977
+    Address=215 Tan Son Nhi, Tan Son Nhi Ward, Tan Phu District, Ho Chi Minh City
+Student: 20225433 - Nguyen Hai Toan
+    GPA=8.05, Telephone=092-340-9571
+    Email=nhtoan@icloud.com
+    DOB=25/12/1973
+    Address=145 Nguyen Van Cu, Ward 1, District 5, Ho Chi Minh City
+Student: 18236434 - Nguyen Thuy Chieu
+    GPA=8.92, Telephone=092-406-9665
+    Email=ntchieu@inbox.com
+    DOB=18/01/1973
+    Address=139 Hoang Hoa Tham, Ward 5, Binh Thanh District, Ho Chi Minh City
+Student: 19245435 - Pham Nhu Khanh
+    GPA=7.29, Telephone=039-278-1018
+    Email=pnkhanh@vtv.vn
+    DOB=17/01/1980
+    Address=77 Tran Binh Trong, Ward 3, District 5, Ho Chi Minh City
+Student: 21115436 - Loc Lam Tay
+    GPA=6.90, Telephone=091-653-2818
+    Email=lltay@inbox.com
+    DOB=12/04/2002
+    Address=141 Dang Tat, Tan Dinh Ward, District 1, Ho Chi Minh City
+Student: 20265437 - Nguyen Quynh Dinh
+    GPA=8.95, Telephone=097-178-7501
+    Email=nqdinh@zoho.com
+    DOB=05/05/2000
+    Address=237 Vo Van Kiet, Nguyen Thai Binh Ward, District 1, Ho Chi Minh City
+Student: 19220438 - Than Ai Do
+    GPA=7.22, Telephone=083-657-0660
+    Email=tado@yandex.com
+    DOB=02/09/1987
+    Address=55 Le Truc, Ward 7, Binh Thanh District, Ho Chi Minh City
+Student: 18115439 - Nguyen Khang Hue
+    GPA=9.85, Telephone=058-086-7383
+    Email=nkhue@gmail.com
+    DOB=08/10/1978
+    Address=179 Le Thanh Ton, Ben Nghe Ward, District 1, Ho Chi Minh City
+Student: 18217440 - Pham An Cuc
+    GPA=6.23, Telephone=056-729-7415
+    Email=pacuc@zoho.com
+    DOB=01/08/1991
+    Address=275 Tran Phu, Ward 8, District 5, Ho Chi Minh City
+Student: 19177441 - Ngo Khanh Vuong
+    GPA=3.13, Telephone=056-497-1086
+    Email=nkvuong@vtv.vn
+    DOB=07/07/1984
+    Address=83 Mai Thi Luu, Da Kao Ward, District 1, Ho Chi Minh City

@@ -1,0 +1,201 @@
+Street,Ward,District
+Tran Khanh Du,Tan Dinh,1
+Tran Nhat Duat,Tan Dinh,1
+Dang Tat,Tan Dinh,1
+Dang Dung,Tan Dinh,1
+Tran Quang Khai,Tan Dinh,1
+Dinh Tien Hoang,Da Kao,1
+Dien Bien Phu,Da Kao,1
+Mai Thi Luu,Da Kao,1
+Phan Ke Binh,Da Kao,1
+Cay Diep,Da Kao,1
+Le Thanh Ton,Ben Nghe,1
+Ly Tu Trong,Ben Nghe,1
+Ton Duc Thang,Ben Nghe,1
+Le Duan,Ben Nghe,1
+Dong Du,Ben Nghe,1
+Nguyen Du,Ben Thanh,1
+Le Loi,Ben Thanh,1
+Luu Van Lang,Ben Thanh,1
+Truong Dinh,Ben Thanh,1
+Nam Ky Khoi Nghia,Ben Thanh,1
+Nguyen Thai Binh,Nguyen Thai Binh,1
+Nguyen Cong Tru,Nguyen Thai Binh,1
+Vo Van Kiet,Nguyen Thai Binh,1
+Pasteur,Nguyen Thai Binh,1
+Ton That Dam,Nguyen Thai Binh,1
+Ton That Tung,Pham Ngu Lao,1
+Le Thi Rieng,Pham Ngu Lao,1
+Le Lai,Pham Ngu Lao,1
+Bui Thi Xuan,Pham Ngu Lao,1
+Nguyen Trai,Pham Ngu Lao,1
+Nguyen Cong Tru,Cau Ong Lanh,1
+De Tham,Cau Ong Lanh,1
+Vo Van Kiet,Cau Ong Lanh,1
+Yersin,Cau Ong Lanh,1
+Co Giang,Cau Ong Lanh,1
+Co Bac,Co Giang,1
+Ho Hao Hon,Co Giang,1
+Vo Van Kiet,Co Giang,1
+De Tham,Co Giang,1
+Co Giang,Co Giang,1
+Nguyen Van Cu,4,5
+Tran Phu,4,5
+An Duong Vuong,4,5
+Tran Binh Trong,4,5
+Le Hong Phong,4,5
+Ngo Gia Tu,9,5
+Nguyen Chi Thanh,9,5
+Yet Kieu,9,5
+Hung Vuong,9,5
+Su Van Hanh,9,5
+Le Hong Phong,3,5
+Tran Binh Trong,3,5
+An Duong Vuong,3,5
+Nguyen Van Cu,3,5
+Huynh Man Dat,3,5
+Tan Thanh,12,5
+Pham Huu Chi,12,5
+Tan Hung,12,5
+Thuan Kieu,12,5
+Nguyen Kim,12,5
+Phan Van Tri,2,5
+Nguyen Bieu,2,5
+Tran Binh Trong,2,5
+Tran Hung Dao,2,5
+Nguyen Van Cu,2,5
+Mac Thien Tich,8,5
+Tran Phu,8,5
+Nguyen Tri Phuong,8,5
+An Duong Vuong,8,5
+Nguyen Trai,8,5
+An Binh,7,5
+Bui Huu Nghia,7,5
+Phan Van Tri,7,5
+Nguyen Trai,7,5
+Huynh Man Dat,7,5
+Cao Dat,1,5
+Tran Binh Trong,1,5
+Nguyen Bieu,1,5
+Nguyen Van Cu,1,5
+Vo Van Kiet,1,5
+Street Number 10,Tan Thuan Dong,7
+Street Number 13,Tan Thuan Dong,7
+Street Number 16,Tan Thuan Dong,7
+Street Number 18,Tan Thuan Dong,7
+Street Number 22,Tan Thuan Dong,7
+Street Number 5K,Tan Thuan Tay,7
+Street Number 7L,Tan Thuan Tay,7
+Ngo Thi Nhan,Tan Thuan Tay,7
+Nguyen Van Linh,Tan Thuan Tay,7
+Huynh Tan Phat,Tan Thuan Tay,7
+Phan Huy Thuc,Tan Kieng,7
+Lam Van Ben,Tan Kieng,7
+Be Van Cam,Tan Kieng,7
+Tran Xuan Soan,Tan Kieng,7
+Le Van Luong,Tan Kieng,7
+Nguyen Huu Tho,Tan Hung,7
+Nguyen Thi Thap,Tan Hung,7
+Hoang Trong Mau,Tan Hung,7
+Street Number 6,Tan Hung,7
+Street Number 2,Tan Hung,7
+Ly Phuc Man,Binh Thuan,7
+Street Number 3,Binh Thuan,7
+Street Number 5,Binh Thuan,7
+Street Number 7,Binh Thuan,7
+Street Number 11,Binh Thuan,7
+Nguyen Thi Thap,Tan Quy,7
+Street Number 21,Tan Quy,7
+Street Number 23,Tan Quy,7
+Street Number 25,Tan Quy,7
+Street Number 19,Tan Quy,7
+Go O Moi,Phu Thuan,7
+Dao Tri,Phu Thuan,7
+Phu Thuan,Phu Thuan,7
+Huynh Tan Phat,Phu Thuan,7
+Street Number 3,Phu Thuan,7
+Ton Dat Tien,Tan Phu,7
+Tan Trao,Tan Phu,7
+Tran Van Tra,Tan Phu,7
+Nguyen Dong Chi,Tan Phu,7
+Tan Phu,Tan Phu,7
+Nguyen Cuu Dam,Tan Son Nhi,Tan Phu
+Tan Son Nhi,Tan Son Nhi,Tan Phu
+Nguyen The Truyen,Tan Son Nhi,Tan Phu
+Nguyen Van Sang,Tan Son Nhi,Tan Phu
+Diep Minh Chau,Tan Son Nhi,Tan Phu
+Tay Thanh,Tay Thanh,Tan Phu
+Nguyen Huu Tien,Tay Thanh,Tan Phu
+Che Lan Vien,Tay Thanh,Tan Phu
+Duc Hien,Tay Thanh,Tan Phu
+Nguyen Huu Dat,Tay Thanh,Tan Phu
+Do Nhuan,Son Ky,Tan Phu
+Son Ky,Son Ky,Tan Phu
+Tan Quy,Son Ky,Tan Phu
+Tan Thang,Son Ky,Tan Phu
+Kenh 19/5,Son Ky,Tan Phu
+Go Dau,Tan Quy,Tan Phu
+Le Lieu,Tan Quy,Tan Phu
+Doc Lap,Tan Quy,Tan Phu
+Tan Huong,Tan Quy,Tan Phu
+Do Thi Tam,Tan Quy,Tan Phu
+Thanh Cong,Tan Thanh,Tan Phu
+Doc Lap,Tan Thanh,Tan Phu
+Thong Nhat,Tan Thanh,Tan Phu
+Vuon Lai,Tan Thanh,Tan Phu
+Chu Van An,Tan Thanh,Tan Phu
+Le Thiet,Phu Tho Hoa,Tan Phu
+Le Lu,Phu Tho Hoa,Tan Phu
+Van Cao,Phu Tho Hoa,Tan Phu
+Phu Tho Hoa,Phu Tho Hoa,Tan Phu
+Le Lo,Phu Tho Hoa,Tan Phu
+Thach Lam,Phu Thanh,Tan Phu
+Thoai Ngoc Hau,Phu Thanh,Tan Phu
+Tran Quang Co,Phu Thanh,Tan Phu
+Hien Vuong,Phu Thanh,Tan Phu
+Binh Long,Phu Thanh,Tan Phu
+Khuong Viet,Phu Trung,Tan Phu
+Kenh Tan Hoa,Phu Trung,Tan Phu
+Hoang Xuan Nhi,Phu Trung,Tan Phu
+Cao Van Ngoc,Phu Trung,Tan Phu
+Au Co,Phu Trung,Tan Phu
+Binh Loi,13,Binh Thanh
+Dang Thuy Tram,13,Binh Thanh
+Luong Ngoc Quyen,13,Binh Thanh
+Pham Van Dong,13,Binh Thanh
+Nguyen Xi,13,Binh Thanh
+Mai Xuan Thuong,11,Binh Thanh
+Pham Van Tri,11,Binh Thanh
+Nguyen Hong,11,Binh Thanh
+Tran Quy Cap,11,Binh Thanh
+Nguyen Van Dau,11,Binh Thanh
+Cau Kinh,27,Binh Thanh
+Binh Quoi,27,Binh Thanh
+Thanh Da,27,Binh Thanh
+Street Number 12,27,Binh Thanh
+Street Number 3,27,Binh Thanh
+Nguyen Xi,26,Binh Thanh
+Chu Van An,26,Binh Thanh
+Xo Viet Nghe Tinh,26,Binh Thanh
+Street Number 14,26,Binh Thanh
+Street Number 5,26,Binh Thanh
+Nguyen Khuyen,12,Binh Thanh
+Nguyen Duc Ke,12,Binh Thanh
+Bui Dinh Tuy,12,Binh Thanh
+Phan Chu Trinh,12,Binh Thanh
+No Trang Long,12,Binh Thanh
+Vo Oanh,25,Binh Thanh
+Dien Bien Phu,25,Binh Thanh
+Ung Van Khiem,25,Binh Thanh
+Nguyen Gia Tri,25,Binh Thanh
+Tan Cang,25,Binh Thanh
+Nguyen Thuong Hien,5,Binh Thanh
+Nguyen Trung Truc,5,Binh Thanh
+Tran Binh Trong,5,Binh Thanh
+Nguyen Van Dau,5,Binh Thanh
+Hoang Hoa Tham,5,Binh Thanh
+Le Truc,7,Binh Thanh
+No Trang Long,7,Binh Thanh
+Le Quang Dinh,7,Binh Thanh
+Tran Van Ky,7,Binh Thanh
+Nguyen Huy Luong,7,Binh Thanh

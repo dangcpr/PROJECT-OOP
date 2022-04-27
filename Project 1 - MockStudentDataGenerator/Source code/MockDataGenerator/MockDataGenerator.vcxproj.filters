@@ -45,5 +45,8 @@
     <None Include="Address.csv">
       <Filter>Source Files</Filter>
     </None>
+    <None Include="ClassDiagram.cd">
+      <Filter>Source Files</Filter>
+    </None>
   </ItemGroup>
 </Project>

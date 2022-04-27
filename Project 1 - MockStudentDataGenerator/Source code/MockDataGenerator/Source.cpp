@@ -31,6 +31,24 @@ unsigned long Number::RandomInteger(long left, long right) {
 	return a;
 }
 
+string Student::toStringFull() {
+	stringstream ss;
+	ss << "Student: " << id() << " - " << name().toString() << endl;
+	ss << "\tGPA=" << fixed << setprecision(2) << GPA() << ", " << "Telephone: " << tel() << endl;
+	ss << "\tEmail=" << email() << endl;
+	ss << "\tDOB=" << DOB().toString() << endl;
+	ss << "\tAddress=" << address() << endl;
+	string s = ss.str();
+	return s;
+}
+string Student::toStringShort() {
+	stringstream ss;
+	ss << id() << " - " << name().toString();
+	ss << ", GPA: " << fixed << setprecision(2) << GPA() << endl;
+	string s = ss.str();
+	return s;
+}
+
 string date::toString() {
 	stringstream ss;
 	ss.fill('0');
@@ -137,58 +155,58 @@ Fullname FakeFullnameGenerator::next() {
 	double random = ((double)rand()) / RAND_MAX;
 	double ab = 100 * random;
 	if (ab > 0 && ab <= 38.4) {
-		last = _lastNames[0];
+		last = _CommonlastNames[0];
 	}
 	else if (ab <= 48.7) {
-		last = _lastNames[1];
+		last = _CommonlastNames[1];
 	}
 	else if (ab <= 56.9) {
-		last = _lastNames[2];
+		last = _CommonlastNames[2];
 	}
 	else if (ab <= 63.6) {
-		last = _lastNames[3];
+		last = _CommonlastNames[3];
 	}
 	else if (ab <= 69.1) {
 		int c = _rng.next(1, 2);
 		if (c == 1)
-			last = _lastNames[4];
+			last = _CommonlastNames[4];
 		else
-			last = _lastNames[5];
+			last = _CommonlastNames[5];
 	}
 	else if (ab <= 73.1) {
 		int c = _rng.next(1, 2);
 		if (c == 1)
-			last = _lastNames[6];
+			last = _CommonlastNames[6];
 		else
-			last = _lastNames[7];
+			last = _CommonlastNames[7];
 	}
 	else if (ab <= 76.5) {
-		last = _lastNames[8];
+		last = _CommonlastNames[8];
 	}
 	else if (ab <= 79.6) {
-		last = _lastNames[9];
+		last = _CommonlastNames[9];
 	}
 	else if (ab <= 82.1) {
-		last = _lastNames[10];
+		last = _CommonlastNames[10];
 	}
 	else if (ab <= 84.2) {
-		last = _lastNames[11];
+		last = _CommonlastNames[11];
 	}
 	else if (ab <= 85.5) {
-		last = _lastNames[12];
+		last = _CommonlastNames[12];
 	}
 	else if (ab <= 86.8) {
-		last = _lastNames[13];
+		last = _CommonlastNames[13];
 	}
 	else if (ab <= 87.8) {
-		last = _lastNames[14];
+		last = _CommonlastNames[14];
 	}
 	else if (ab <= 88.3) {
-		last = _lastNames[15];
+		last = _CommonlastNames[15];
 	}
 	else {
-		int ho = _rng.next(_CommonlastNames.size());
-		last = _CommonlastNames[ho];
+		int ho = _rng.next(_lastNames.size());
+		last = _lastNames[ho];
 	}
 
 	int tenlot = _rng.next(_middleNames.size());
@@ -395,6 +413,7 @@ vectorStudent::vectorStudent(string file) {
 		_VS.push_back(tmp.getS());
 	}
 	f.close();
+	cout << "Da doc danh sach sinh vien." << endl;
 }
 RandomStudent::RandomStudent(int i) {
 	FakeBirthday FDOB; date dob = FDOB.next(); _S.setDOB(dob);
@@ -412,15 +431,11 @@ void vectorStudent::RandomListStudent() {
 		RandomStudent S(startID + i);
 		_VS.push_back(S.info());
 	}
+	cout << "Da random them " << numStudent << " sinh vien." << endl;
 }
 void vectorStudent::infoList() {
 	for (int i = 0; i < _VS.size(); i++) {
-		cout << "Student: " << _VS[i].id() << " - " << _VS[i].name().toString() << endl;
-		cout << "\tGPA=" << _VS[i].GPA() << ", " << "Telephone: " << _VS[i].tel() << endl;
-		cout << "\tEmail=" << _VS[i].email() << endl;
-		cout << "\tDOB=" << _VS[i].DOB().toString() << endl;
-		cout << "\tAddress=" << _VS[i].address() << endl;
-		cout << endl;
+		cout << _VS[i].toStringFull();
 	}
 }
 void vectorStudent::saveList(string Filename) {
@@ -435,4 +450,18 @@ void vectorStudent::saveList(string Filename) {
 		if (i != _VS.size() - 1) f << endl;
 	}
 	f.close();
+}
+double vectorStudent::averageGPA() {
+	double sum = 0;
+	for (int i = 0; i < _VS.size(); i++) {
+		sum += _VS[i].GPA();
+	}
+	double ave = sum / _VS.size();
+	return ave;
+}
+void vectorStudent::StudentMoreAveGPA() {
+	for (int i = 0; i < _VS.size(); i++) {
+		if (_VS[i].GPA() > averageGPA()) 
+			cout << _VS[i].toStringShort();
+	}
 }

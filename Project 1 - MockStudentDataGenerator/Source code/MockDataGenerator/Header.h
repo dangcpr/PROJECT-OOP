@@ -8,7 +8,7 @@ using namespace std;
 
 class Number {
 public:
-	unsigned long RandomInteger(long, long);;
+	unsigned long RandomInteger(long, long);
 };
 class RandomIntegerGenerator {
 public:
@@ -51,7 +51,7 @@ public:
 	void setFname(string Fname) { _firstname = Fname; }
 };
 class date {
-protected:
+private:
 	int _day;
 	int _month;
 	int _year;
@@ -115,6 +115,8 @@ public:
 	void setEmail(string Email) { _email = Email; }
 	void setDOB(date DOB) { _DOB = DOB; }
 	void setAddress(string add) { _address = add; }
+	string toStringFull();
+	string toStringShort();
 	~Student() {};
 };
 
@@ -219,6 +221,8 @@ public:
 	void RandomListStudent();
 	void infoList();
 	void saveList(string);
+	double averageGPA();
+	void StudentMoreAveGPA();
 	vector<Student> getVS() { return _VS; }
 	~vectorStudent() { };
 };
