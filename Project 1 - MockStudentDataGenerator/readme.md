@@ -40,7 +40,7 @@
 6.  * [X] Print out all the students that have a GPA greater than the average GPA.
 7.  * [X] Menu (3 functions: Random, calculate average GPA and print out higher list, exit program).
 # What should be taken into account for a bonus? 
-1. Function Menu (3 fuctions).
+1. Function Menu (3 functions).
 2. Use Regex to check user input.
 # Expected Grade
 | ID | Name | Expect Grade |
