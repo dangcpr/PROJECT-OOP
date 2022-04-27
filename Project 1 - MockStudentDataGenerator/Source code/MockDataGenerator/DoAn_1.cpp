@@ -129,58 +129,58 @@ Fullname RandomFullnameGenerator::next() {
 	string first = "";
 	float ab = (float)a + b;
 	if (ab > 0 && ab <= 38.4) {
-		first = _firstNames[0];
+		first = _CommonfirstNames[0];
 	}
 	else if (ab <= 48.7) {
-		first = _firstNames[1];
+		first = _CommonfirstNames[1];
 	}
 	else if (ab <= 56.9) {
-		first = _firstNames[2];
+		first = _CommonfirstNames[2];
 	}
 	else if (ab <= 63.6) {
-		first = _firstNames[3];
+		first = _CommonfirstNames[3];
 	}
 	else if (ab <= 69.1) {
 		int c = _rng.next(1, 2);
 		if (c == 1)
-			first = _firstNames[4];
+			first = _CommonfirstNames[4];
 		else
-			first = _firstNames[5];
+			first = _CommonfirstNames[5];
 	}
 	else if (ab <= 73.1) {
-		int c = _rng.next(1, 2);
+		int c = _rng.next(1,2);
 		if (c == 1)
-			first = _firstNames[6];
+			first = _CommonfirstNames[6];
 		else
-			first = _firstNames[7];
+			first = _CommonfirstNames[7];
 	}
 	else if (ab <= 76.5) {
-		first = _firstNames[8];
+		first = _CommonfirstNames[8];
 	}
 	else if (ab <= 79.6) {
-		first = _firstNames[9];
+		first = _CommonfirstNames[9];
 	}
 	else if (ab <= 82.1) {
-		first = _firstNames[10];
+		first = _CommonfirstNames[10];
 	}
 	else if (ab <= 84.2) {
-		first = _firstNames[11];
+		first = _CommonfirstNames[11];
 	}
 	else if (ab <= 85.5) {
-		first = _firstNames[12];
+		first = _CommonfirstNames[12];
 	}
 	else if (ab <= 86.8) {
-		first = _firstNames[13];
+		first = _CommonfirstNames[13];
 	}
 	else if (ab <= 87.8) {
-		first = _firstNames[14];
+		first = _CommonfirstNames[14];
 	}
 	else if (ab <= 88.3) {
-		first = _firstNames[15];
+		first = _CommonfirstNames[15];
 	}
 	else {
-		int ho = _rng.next(_CommonfirstNames.size());
-		first = _CommonfirstNames[ho];
+		int ho = _rng.next(_firstNames.size());
+		first = _firstNames[ho];
 	}
 
 	int tenlot = _rng.next(_middleNames.size());
