@@ -4,7 +4,7 @@
 # How to run the program
 1. Select the "Release" folder, run the file "MockDataGenerator.exe".
 2. To debug the program, select "Source code.sln" to enter the solution and then press F5 or Ctrl+F5 to run.
-# Project 1: Mock Student Data Generator
+# Project 2: Employee Salary
 ## Notice
 - [x] Completed.
 - [ ] Unfinished.
