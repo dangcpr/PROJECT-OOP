@@ -44,7 +44,7 @@
    4. * [ ]  Builder.
 # What should be taken into account for a bonus? 
 # Expected Grade
-| ID | Name | Expect Grade |
+| ID | Name | Expected Grade |
 | -- | ---- | ------------ |
 |20120049|Nguyen Hai Dang||
 |20120113|Le Nguyen Khang||
