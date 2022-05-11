@@ -9,9 +9,9 @@
 - [x] Completed.
 - [ ] Unfinished.
 ## Content
-1. * [ ] Read the file.
+1. * [X] Read the file.
 2. * [ ] Print out all the employees' information and the final payment for each employee.
-   1. * [ ] Daily employees, get paid by the number of days spent working in a month.
+   1. * [X] Daily employees, get paid by the number of days spent working in a month.
     
          For example, if each day a daily employee is paid 100$, and in this month he worked 28 days. 
     
@@ -29,7 +29,7 @@
     
          The payment for this product employee will be 180 * 10 = 1.800$.
     
-   4. * [ ] Manager, get paid by the number of employees he managed, plus a fixed payment for each month.
+   4. * [X] Manager, get paid by the number of employees he managed, plus a fixed payment for each month.
     
          For example, if a manager has 20 employees to manage, and for each employee, he will be paid 100$ for management, his fixed payment for a month is 500$.
     
@@ -37,9 +37,9 @@
     
    5. Each employee will have a Fullname.
    
-3. * [ ] Four basic design patterns:
+3. Four basic design patterns:
    1. * [ ]  Singleton.
-   2. * [ ]  Factory.
+   2. * [X]  Factory.
    3. * [ ]  Prototype.
    4. * [ ]  Builder.
 # What should be taken into account for a bonus? 

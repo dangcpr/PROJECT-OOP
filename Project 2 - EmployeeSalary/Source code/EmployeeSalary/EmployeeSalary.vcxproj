@@ -147,6 +147,7 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="November2021.txt" />
+    <Text Include="Testcase.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

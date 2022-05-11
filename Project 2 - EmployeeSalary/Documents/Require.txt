@@ -1,6 +1,6 @@
 Các lớp cơ bản cần tạo:
-1. Employee (lớp cha - bao gồm)
-2. ListEmployee (lớp con kế thừa lớp 1)
+1. ListEmployee (đọc file - kế thừa lớp 2)
+2. Employee (lớp cha - bao gồm)
 3. DailyEmployee (lớp con kế thừa lớp 2)
 4. HourlyEmployee (lớp con kế thừa lớp 2)
 5. ProductEmployee (lớp con kế thừa lớp 2)
