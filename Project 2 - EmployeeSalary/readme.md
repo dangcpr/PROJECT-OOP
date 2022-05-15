@@ -1,29 +1,43 @@
 # Member
 1. Nguyen Hai Dang - ID: 20120049
 2. Le Nguyen Khang - ID: 20120113
-# How to run the program
-1. Select the "Release" folder, run the file "MockDataGenerator.exe".
-2. To debug the program, select "Source code.sln" to enter the solution and then press F5 or Ctrl+F5 to run.
+# How to run the application
+## Debug the application
+1. Celect "Source code.sln" to enter the solution
+2. The application uses C++17 or higher version to debug, so to debug the application need to do the following steps:
+   1. View -> Solution Explorer on Menu bar.
+      ![Step 1](Documents/Cplusplus17-Step1.png "Step 1")
+   2. When the Solution Explorer window appears, left-click the Project name and then press Alt + Enter or right-click the Project name and then click Properties.
+      ![Step 2](Documents/Cplusplus17-Step2.png "Step 2")
+   3. The Properties window appears, in the Configuration section, click on the list and select Debug.
+      ![Step 3](Documents/Cplusplus17-Step3.png "Step 3")
+   4. Under Configuration->General->C++Language Standard, click on ...C++17, ...C++20, ... Latest C++ and then click Apply.
+      ![Step 4](Documents/Cplusplus17-Step4.png "Step 4")
+3. Press F5 or Ctrl+F5 to run.
+## Run the application with Release folder
+- Select the "Release" folder (2 files: EmployeeSalary.exe and November2021.txt - Data), run the file "EmployeeSalary.exe".
+![Release](Documents/Release.png "Release")
 # Project 2: Employee Salary
 ## Notice
 - [x] Completed.
 - [ ] Unfinished.
 ## Content
+0. * [X] Version: C++17 and higher version.
 1. * [X] Read the file.
-2. * [ ] Print out all the employees' information and the final payment for each employee.
+2. * [X] Print out all the employees' information and the final payment for each employee.
    1. * [X] Daily employees, get paid by the number of days spent working in a month.
     
          For example, if each day a daily employee is paid 100$, and in this month he worked 28 days. 
     
          The payment for this daily employee will be 100 x 28 = 2.800$.
     
-   2. * [ ] Hourly employees, get paid by the number of hours spent working in a month.
+   2. * [X] Hourly employees, get paid by the number of hours spent working in a month.
     
          For example, if in this month an hourly employee worked 1200 hours, and for each hour he will be paid 15$.
     
          The payment for this hourly employee will be 1200 x 15 = 1.800$.
     
-   3. * [ ] Product employees, get paid by the number of products created in a month.
+   3. * [X] Product employees, get paid by the number of products created in a month.
     
          For example, if this month a product employee created 180 products, and for each product he will be paid 10$.
     

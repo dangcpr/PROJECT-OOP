@@ -31,8 +31,5 @@
     <Text Include="November2021.txt">
       <Filter>Source Files</Filter>
     </Text>
-    <Text Include="Testcase.txt">
-      <Filter>Source Files</Filter>
-    </Text>
   </ItemGroup>
 </Project>

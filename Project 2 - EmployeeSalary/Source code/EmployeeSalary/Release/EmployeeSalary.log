@@ -1,0 +1,13 @@
+﻿  EmployeeSalary.cpp
+C:\Users\HAI DANG\OneDrive - VNU-HCMUS\Năm 2\2. Phương pháp lập trình hướng đối tượng\Lý thuyết\PROJECT\Project 2 - EmployeeSalary\Source code\EmployeeSalary\Header.h(43,45): warning C4834: discarding return value of function with 'nodiscard' attribute
+C:\Users\HAI DANG\OneDrive - VNU-HCMUS\Năm 2\2. Phương pháp lập trình hướng đối tượng\Lý thuyết\PROJECT\Project 2 - EmployeeSalary\Source code\EmployeeSalary\Header.h(205,21): warning C4018: '<': signed/unsigned mismatch
+  Source.cpp
+C:\Users\HAI DANG\OneDrive - VNU-HCMUS\Năm 2\2. Phương pháp lập trình hướng đối tượng\Lý thuyết\PROJECT\Project 2 - EmployeeSalary\Source code\EmployeeSalary\Header.h(43,45): warning C4834: discarding return value of function with 'nodiscard' attribute
+C:\Users\HAI DANG\OneDrive - VNU-HCMUS\Năm 2\2. Phương pháp lập trình hướng đối tượng\Lý thuyết\PROJECT\Project 2 - EmployeeSalary\Source code\EmployeeSalary\Header.h(205,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\HAI DANG\OneDrive - VNU-HCMUS\Năm 2\2. Phương pháp lập trình hướng đối tượng\Lý thuyết\PROJECT\Project 2 - EmployeeSalary\Source code\EmployeeSalary\Source.cpp(219,20): warning C4018: '<': signed/unsigned mismatch
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+C:\Users\HAI DANG\OneDrive - VNU-HCMUS\Năm 2\2. Phương pháp lập trình hướng đối tượng\Lý thuyết\PROJECT\Project 2 - EmployeeSalary\Source code\EmployeeSalary\Source.cpp(34): warning C4715: 'Employee::EmployeeFactory': not all control paths return a value
+  All 1015 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  EmployeeSalary.vcxproj -> C:\Users\HAI DANG\OneDrive - VNU-HCMUS\Năm 2\2. Phương pháp lập trình hướng đối tượng\Lý thuyết\PROJECT\Project 2 - EmployeeSalary\Source code\Release\EmployeeSalary.exe

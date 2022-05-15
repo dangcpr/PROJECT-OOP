@@ -63,16 +63,79 @@ public:
 	static Employee* EmployeeFactory(string type);
 	void setFullname(Fullname fullname) { _fullname = fullname; }
 };
+
+class ProductEmployee : public Employee {
+private:
+	double _paymentPerProduct;
+	int _totalProduct;
+public:
+	static inline ProductEmployee* member = NULL;
+	Employee* getMember() {
+		return member;
+	}
+	ProductEmployee() : Employee() {
+		_paymentPerProduct = 0;
+		_totalProduct = 0;
+	}
+	ProductEmployee(Fullname fullname, double hourlyPayment, int totalHours) : Employee() {
+		_fullname = fullname;
+		_paymentPerProduct = hourlyPayment;
+		_totalProduct = totalHours;
+	}
+	static Employee* instance();
+	//static Employee* instance(Fullname, double, int);
+
+	void setPaymentPerProduct(double paymentPerProduct) { _paymentPerProduct = paymentPerProduct; }
+	void setTotalProduct(int totalProduct) { _totalProduct = totalProduct; }
+	double totalPayment();
+	string toString();
+	string className() { return "HourlyEmployee"; }
+	~ProductEmployee() {
+		cout << "Delete HourlyEmployee!" << endl;
+	}
+};
+
+class HourlyEmployee : public Employee {
+private:
+	double _hourlyPayment;
+	int _totalHours;
+public:
+	static inline HourlyEmployee* member = NULL;
+	Employee* getMember() {
+		return member;
+	}
+	HourlyEmployee() : Employee() {
+		_hourlyPayment = 0;
+		_totalHours = 0;
+	}
+	HourlyEmployee(Fullname fullname, double hourlyPayment, int totalHours) : Employee() {
+		_fullname = fullname;
+		_hourlyPayment = hourlyPayment;
+		_totalHours = totalHours;
+	}
+	static Employee* instance();
+	//static Employee* instance(Fullname, double, int);
+
+	void setHourlyPayment(double hourlyPayment) { _hourlyPayment = hourlyPayment; }
+	void setTotalHours(int totalHours) { _totalHours = totalHours; }
+	double totalPayment();
+	string toString();
+	string className() { return "HourlyEmployee"; }
+	~HourlyEmployee() {
+		cout << "Delete HourlyEmployee!" << endl;
+	}
+};
+
 class DailyEmployee : public Employee {
 private:
 	double _dailyPayment;
 	int _totalDays;
 public:
-	static DailyEmployee* member;
+	static inline DailyEmployee* member = NULL;
 	Employee* getMember() {
 		return member;
 	}
-	DailyEmployee() : Employee()  {
+	DailyEmployee() : Employee() {
 		_dailyPayment = 0;
 		_totalDays = 0;
 	}
@@ -93,13 +156,17 @@ public:
 		cout << "Delete DailyEmployee!" << endl;
 	}
 };
+
+
+
+
 class Manager : public Employee {
 private:
 	double _fixedPayment;
 	int _totalEmployees;
 	double _paymentPerEmployee;
 public:
-	static Manager* member;
+	static inline Manager* member = NULL;
 	Employee* getMember() {
 		return member;
 	}
@@ -126,7 +193,7 @@ public:
 		cout << "Delete Manager!" << endl;
 	}
 };
-class ListEmployee{
+class ListEmployee {
 private:
 	fstream f;
 	vector<Employee*> _member;

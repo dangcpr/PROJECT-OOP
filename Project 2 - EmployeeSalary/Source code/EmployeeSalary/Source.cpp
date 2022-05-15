@@ -21,6 +21,16 @@ Employee* Employee::EmployeeFactory(string type) {
 		man->member = man;
 		return man;
 	}
+	else if (type == "HourlyEmployee") {
+		HourlyEmployee* hour = new HourlyEmployee();
+		hour->member = hour;
+		return hour;
+	}
+	else if (type == "ProductEmployee") {
+		ProductEmployee* pro = new ProductEmployee();
+		pro->member = pro;
+		return pro;
+	}
 }
 
 Employee* DailyEmployee::instance() {
@@ -70,6 +80,47 @@ string Manager::toString() {
 	stringstream ss;
 	ss << "Manager: " << _fullname.toString() << endl;
 	ss << "   FixedPayment=" << _fixedPayment << "$; TotalEmployees=" << _totalEmployees << "; PaymentPerEmployee=" << _paymentPerEmployee << "$; TotalPayment=" << totalPayment() << "$" << endl;
+
+	string s = ss.str();
+	return s;
+}
+
+Employee* HourlyEmployee::instance() {
+	if (member == NULL) {
+		member = new HourlyEmployee();
+	}
+	return member;
+}
+
+double HourlyEmployee::totalPayment() {
+	double t = 0;
+	t = _hourlyPayment * _totalHours;
+	return t;
+}
+string HourlyEmployee::toString() {
+	stringstream ss;
+	ss << "HourlyEmployee: " << _fullname.toString() << endl;
+	ss << "   HourlyPayment=" << _hourlyPayment << "$; TotalHours=" << _totalHours << "; TotalPayment=" << totalPayment() << "$" << endl;
+
+	string s = ss.str();
+	return s;
+}
+
+Employee* ProductEmployee::instance() {
+	if (member == NULL) {
+		member = new ProductEmployee();
+	}
+	return member;
+}
+double ProductEmployee::totalPayment() {
+	double t = 0;
+	t = _paymentPerProduct * _totalProduct;
+	return t;
+}
+string ProductEmployee::toString() {
+	stringstream ss;
+	ss << "ProductEmployee: " << _fullname.toString() << endl;
+	ss << "   PaymentPerProduct=" << _paymentPerProduct << "$; TotalProducts=" << _totalProduct << "; TotalPayment=" << totalPayment() << "$" << endl;
 
 	string s = ss.str();
 	return s;
@@ -126,6 +177,38 @@ ListEmployee::ListEmployee(string file, int& code) {
 			man->setPaymentPerEmployee(stod(line));
 
 			f.seekg(2, ios::cur);
+		}
+		else if (line == "HourlyEmployee") {
+			tmp = Employee::EmployeeFactory("HourlyEmployee");
+			HourlyEmployee* hour = (HourlyEmployee*)tmp->getMember();
+			f.seekg(1, ios::cur);
+			getline(f, line, '\n');
+			hour->setFullname(SplitFullname::split(line));
+
+			f.seekg(17, ios::cur);
+			getline(f, line, '$');
+			hour->setHourlyPayment(stod(line));
+
+			f.seekg(13, ios::cur);
+			getline(f, line, '\n');
+			hour->setTotalHours(stoi(line));
+
+		}
+		else if (line == "ProductEmployee") {
+			tmp = Employee::EmployeeFactory("ProductEmployee");
+			ProductEmployee* pro = (ProductEmployee*)tmp->getMember();
+			f.seekg(1, ios::cur);
+			getline(f, line, '\n');
+			pro->setFullname(SplitFullname::split(line));
+
+			f.seekg(21, ios::cur);
+			getline(f, line, '$');
+			pro->setPaymentPerProduct(stod(line));
+
+			f.seekg(16, ios::cur);
+			getline(f, line, '\n');
+			pro->setTotalProduct(stoi(line));
+
 		}
 		_member.push_back(tmp);
 	}

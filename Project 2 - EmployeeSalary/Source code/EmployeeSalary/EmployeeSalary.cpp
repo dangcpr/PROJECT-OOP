@@ -4,9 +4,6 @@
 #include "Header.h"
 using namespace std;
 
-Manager* Manager::member = NULL;
-DailyEmployee* DailyEmployee::member = NULL;
-
 
 void DisplayMenu() {
     cout << "Menu:" << endl;
@@ -29,7 +26,7 @@ public:
 int main()
 {
     int code;
-    ListEmployee* L = new ListEmployee("Test.txt", code);
+    ListEmployee* L = new ListEmployee("November2021.txt", code);
     if (code == 0) {
         _getch();
         return 0;
