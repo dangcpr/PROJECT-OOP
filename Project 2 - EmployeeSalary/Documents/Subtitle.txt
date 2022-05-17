@@ -1,0 +1,13 @@
+Bây giờ em xin demo đồ án 2 - Employee Salary.
+
+Trên màn hình có 2 chức năng, in thông tin và thoát chương trình (nếu file được mở thành công).
+Nếu như mình nhập các lệnh không hợp lệ thì sẽ báo lỗi tương ứng như sau
+bây giờ nhập hợp lệ.
+
+Bây giờ em sẽ mở file gốc ra so sánh
+Nội dung in ra màn hình console và file đều đã trùng khớp, các phép tính total đã đúng theo yêu cầu.
+Để thoát chương trình, ta bấm phím 0 rồi enter.
+
+bây giờ em sẽ thử demo file không hợp lệ xem chương trình có mở được không.
+Chương trình đã báo lỗi không mở được file, mình ấn bất kỳ phím nào để thoát.
+Phần demo của nhóm em đến đây kết thúc, cảm ơn thầy đã theo dõi!

@@ -3,7 +3,7 @@
 2. Le Nguyen Khang - ID: 20120113
 # How to run the application
 ## Debug the application
-1. Celect "Source code.sln" to enter the solution
+1. Select "Source code.sln" to enter the solution
 2. The application uses C++17 or higher version to debug, so to debug the application need to do the following steps:
    1. View -> Solution Explorer on Menu bar.
       ![Step 1](Documents/Cplusplus17-Step1.png "Step 1")
@@ -49,7 +49,7 @@
     
          The payment for this manager this month will be 20 x 100 + 500 = 2500. 
     
-   5. Each employee will have a Fullname.
+   5. * [X] Each employee will have a Fullname.
    
 3. Four basic design patterns:
    1. * [ ]  Singleton.
@@ -57,10 +57,12 @@
    3. * [ ]  Prototype.
    4. * [ ]  Builder.
 # What should be taken into account for a bonus? 
+1. Function Menu (2 functions).
+2. Use Regex to check user input.
 # Expected Grade
 | ID | Name | Expected Grade |
 | -- | ---- | ------------ |
-|20120049|Nguyen Hai Dang||
-|20120113|Le Nguyen Khang||
+|20120049|Nguyen Hai Dang|9.5|
+|20120113|Le Nguyen Khang|9.5|
 # Video demo LINK
-
+- https://youtu.be/j0eq7MqlqyA
