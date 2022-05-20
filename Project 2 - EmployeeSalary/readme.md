@@ -3,7 +3,7 @@
 2. Le Nguyen Khang - ID: 20120113
 # How to run the application
 ## Debug the application
-1. Select "Source code.sln" to enter the solution
+1. Select "Source code.sln" to enter the solution.
 2. The application uses C++17 or higher version to debug, so to debug the application need to do the following steps:
    1. View -> Solution Explorer on Menu bar.
       ![Step 1](Documents/Cplusplus17-Step1.png "Step 1")
@@ -45,7 +45,7 @@
     
    4. * [X] Manager, get paid by the number of employees he managed, plus a fixed payment for each month.
     
-         For example, if a manager has 20 employees to manage, and for each employee, he will be paid 100$ for management, his fixed payment for a month is 500$.
+         For example, if a manager has 20 employees to manage, and for each employee, he will be paid 100$. for management, his fixed payment for a month is 500$.
     
          The payment for this manager this month will be 20 x 100 + 500 = 2500. 
     

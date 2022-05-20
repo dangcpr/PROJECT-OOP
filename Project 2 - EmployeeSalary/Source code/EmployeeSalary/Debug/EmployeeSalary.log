@@ -1,4 +1,0 @@
-﻿  EmployeeSalary.cpp
-C:\Users\HAI DANG\OneDrive - VNU-HCMUS\Năm 2\2. Phương pháp lập trình hướng đối tượng\Lý thuyết\PROJECT\Project 2 - EmployeeSalary\Source code\EmployeeSalary\Header.h(43,45): warning C4834: discarding return value of function with 'nodiscard' attribute
-C:\Users\HAI DANG\OneDrive - VNU-HCMUS\Năm 2\2. Phương pháp lập trình hướng đối tượng\Lý thuyết\PROJECT\Project 2 - EmployeeSalary\Source code\EmployeeSalary\Header.h(205,21): warning C4018: '<': signed/unsigned mismatch
-  EmployeeSalary.vcxproj -> C:\Users\HAI DANG\OneDrive - VNU-HCMUS\Năm 2\2. Phương pháp lập trình hướng đối tượng\Lý thuyết\PROJECT\Project 2 - EmployeeSalary\Source code\Debug\EmployeeSalary.exe
