@@ -45,7 +45,8 @@
     
    4. * [X] Manager, get paid by the number of employees he managed, plus a fixed payment for each month.
     
-         For example, if a manager has 20 employees to manage, and for each employee, he will be paid 100$ for management, his fixed payment for a month is 500$.
+         For example, if a manager has 20 employees to manage, and for each employee, he will be paid 100$.
+         for management, his fixed payment for a month is 500$.
     
          The payment for this manager this month will be 20 x 100 + 500 = 2500. 
     
