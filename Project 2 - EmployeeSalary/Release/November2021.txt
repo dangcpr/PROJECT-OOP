@@ -11,4 +11,4 @@ ProductEmployee: Peter Abram
 Manager: Clarinda Hyram
    FixedPayment=500$; TotalEmployees=5; PaymentPerEmployee=100$
 ProductEmployee: Peter Graham
-   PaymentPerProduct=11$; TotalProducts=130
+   PaymentPerProduct=11$; TotalProducts=129
